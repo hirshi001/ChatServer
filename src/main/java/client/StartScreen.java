@@ -7,10 +7,10 @@ public class StartScreen extends Screen{
         while(true){
             System.out.println("Enter 1 to login or 2 to register");
             String line = scanner.nextLine();
-            if(line.equals("1")) {
+            if("1".equals(line)) {
                 setScreen(new LoginScreen());
                 break;
-            }else if(line.equals("2")) {
+            }else if("2".equals(line)) {
                 setScreen(new RegisterScreen());
                 break;
             } else {
