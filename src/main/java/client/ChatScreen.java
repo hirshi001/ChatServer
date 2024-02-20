@@ -15,11 +15,11 @@ public class ChatScreen extends Screen {
         System.out.println(help);
         while(true) {
             String message = scanner.nextLine();
-            if(message.equals("/help")) {
+            if("/help".equals(message)) {
                 System.out.println(help);
                 continue;
             }
-            if(message.equals("/quit")) {
+            if("/quit".equals(message)) {
                 setScreen(new LoginScreen());
                 return;
             }
